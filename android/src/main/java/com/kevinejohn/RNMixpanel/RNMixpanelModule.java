@@ -150,7 +150,8 @@ public class RNMixpanelModule extends ReactContextBaseJavaModule implements Life
 
             final MixpanelAPI instance = MixpanelAPI.getInstance(reactApplicationContext,
                                                                  token,
-                                                                 optOutTracking);
+                                                                 optOutTracking,
+                                                                 new JSONObject());
 
             Map<String, MixpanelAPI> newInstances = new HashMap<>();
             if (instances != null) {
